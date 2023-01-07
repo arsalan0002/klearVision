@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,300&family=Open+Sans&display=swap');
+:root{
+    --lg-font: 'Mulish', sans-serif;
+    --sm-font: 'Open Sans', sans-serif;
+}
+
+.insideBanner{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner{
+    min-height: 100vh;
+    background-color: white;
+}
+/* .fa-regular{
+    font-size: 32px !important;
+    color: blueviolet !important;
+} */
+
+.navbar{
+    /* height: 60px !important;
+    background-color: rgb(173, 245, 245) !important;
+    font-size: medium !important; */
+    box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);   
+}
+
+.navbar-brand span{
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.bg-light{
+    background-color: aliceblue !important;
+}
+
+
+button:hover{
+   background-color: rgba(250, 245, 248,0.1);
+}
+
+.nav-link:hover{
+    color: palevioletred !important;
+    text-decoration: underline;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item:hover{
+    color: rgb(190, 140, 74) !important;
+    text-decoration: underline;
+    /* border: 1px solid rgb(16, 16, 14); */
+    /* border-radius: 5px; */
+
+}
+
+
+
+
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: deepskyblue!important;
+}
+
+/* media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+
+/*Small Image-part */
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.product select{
+    display: block;
+    padding: 5px 10px;
+}
+
+.product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.product input:focus{
+    outline: none;
+}
+
+.buy-btn{
+    background-color: #fb774b;
+    height: 38px;
+    width: 140px;
+    font-weight: bolder;
+    color: white;
+    opacity: 1;
+    border: none;
+    transition: 0.3s all;
+}
+
+.buy-btn:hover{
+    background-color: #fb774b;
+
+}

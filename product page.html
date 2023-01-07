@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!---- Bootstrap css ---->
+        <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+        <!---- Custom css ---->
+    <link rel="stylesheet" href="product.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  />
+
+
+</head>
+<body>
+  <!-- navbar -->
+  <nav class = "navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
+    <div class = "container">
+      <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+      <img src = "https://freepngimg.com/thumb/glasses/25180-8-glasses-transparent-image.png" alt = "site icon" width="80pxs">
+      <span class = "text-uppercase fw-bold ms-2">Klear Vision</span>
+      </a>
+        <div class = "order-lg-2 nav-btns">
+        <button type = "button" class = "btn position-relative">
+             <i class = "fa fa-shopping-cart"></i>
+            <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">0</span>
+        </button>
+        <button type = "button" class = "btn position-relative">
+           <i class = "fa fa-heart"></i>
+           <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">0</span>
+         </button>
+         <button type = "button" class = "btn position-relative">
+            <i class = "fa fa-search"></i>
+            </button>
+    </div>
+
+        <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+
+    <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+      <ul class = "navbar-nav mx-auto text-center">
+         <li class = "nav-item px-2 py-2">
+            <a class = "nav-link text-uppercase text-dark" href = "#header">Home</a>
+         </li>  
+
+         <li class="nav-item dropdown px-2 py-2">
+            <a class="nav-link dropdown-toggle text-dark " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    COLLECTION
+            </a>
+        <ul class="dropdown-menu bg-light">
+            <li><a class="dropdown-item " href="#">Mens's Collection</a></li>
+            <li><a class="dropdown-item " href="#">Woman's Collection</a></li>
+        </ul>
+        </li>
+        <li class = "nav-item px-2 py-2">
+            <a class = "nav-link text-uppercase text-dark" href = "#special">specials</a>
+        </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- end of navbar -->  
+
+<section class=" container product my-5 pt-5">
+    <div class="row mt-5">
+        <div class="col-lg-5 col-md-12 col-12">
+            <img class="img-fluid w-100  pb-1"  src="images/p3.jpeg" id="mainImg" alt="">
+
+            <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="images/ex-1.jpeg" onclick="showImage()" width="100%" class="small-img" alt="">
+            </div>
+
+            <div class="small-img-col">
+                <img src="images/ex-8.jpg" onclick="showImage2()" width="100%" class="small-img" alt="">
+            </div>
+
+            <div class="small-img-col">
+                <img src="images/ex-9.jpeg" onclick="showImage3()" width="100%" class="small-img" alt="">
+            </div>
+
+            <div class="small-img-col">
+                <img src="images/p4.jpeg" onclick="showImage4()" width="100%" class="small-img" alt="">
+            </div>
+        </div>
+        </div>
+        <div  class="col-lg-5 col-md-12 col-12">
+            <h6>Home / Retro-Frame</h6>
+            <h3 class="py-4">Men's Fashion Frame</h3>
+            <h2>RS.</h2>
+            <select class="my-3" name="" id="">
+                <option value="">Select Colour</option>
+                <option value="">Black</option>
+                <option value="">Blue</option>
+                <option value="">Grey</option>
+            </select>
+             <input type="number" value="1">
+             <button class="buy-btn">Add To Cart</button>
+             <h4 class="mt-5 mb-5">Product Details</h4>
+             <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, fuga!
+                 Dolorum facere, adipisci facilis voluptatum fugit provident beatae dolores
+                 dignissimos vitae voluptas consectetur harum, incidunt magni inventore rerum 
+                 reprehenderit ad quos alias quidem illo quia? Dolores est velit distinctio 
+                 maiores nam enim accusantium molestiae totam. Unde, molestias autem 
+               laborum enim reprehenderit minus iure perspiciatis deleniti nihil, .</span>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<hr>
+<footer class = "bg-light py-5">
+    <div class = "container">
+        <div class = "row text-dark g-4">
+            <div class = "col-md-6 col-lg-3">
+                <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Attire</a>
+                <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light">Links</h5>
+                <ul class = "list-unstyled">
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Collection
+                        </a>
+                    </li>
+                        </a>
+                    </li> 
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Contact Us</h5>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        Karachi Pakistan.
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span class = "fw-light">
+                        klearvision01@gmail.com
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        +92  
+                    </span>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Follow Us</h5>
+                <div>
+                    <ul class = "list-unstyled d-flex">
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+
+
+    <!-- Bootstrap Javascript -->
+<script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+<script src="product.js"></script>
+</body>
+</html>

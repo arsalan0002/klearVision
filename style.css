@@ -1,0 +1,178 @@
+
+/* .banner {
+    background-image: url("https://www.dhresource.com/0x0/f2/albu/g10/M01/FE/E9/rBVaWVywpdqAT0CkAADV9AYJYQI471.jpg/metal-women-cat-eye-optical-glasses-frame.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,300&family=Open+Sans&display=swap');
+:root{
+    --lg-font: 'Mulish', sans-serif;
+    --sm-font: 'Open Sans', sans-serif;
+}
+
+.insideBanner{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner{
+    min-height: 100vh;
+    background-color: white;
+}
+/* .fa-regular{
+    font-size: 32px !important;
+    color: blueviolet !important;
+} */
+
+.navbar{
+    /* height: 60px !important;
+    background-color: rgb(173, 245, 245) !important;
+    font-size: medium !important; */
+    box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);   
+}
+
+.navbar-brand span{
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.bg-light{
+    background-color: aliceblue !important;
+}
+
+
+button:hover{
+   background-color: rgba(250, 245, 248,0.1);
+}
+
+.nav-link:hover{
+    color: palevioletred !important;
+    text-decoration: underline;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item:hover{
+    color: rgb(190, 140, 74) !important;
+    text-decoration: underline;
+    /* border: 1px solid rgb(16, 16, 14); */
+    /* border-radius: 5px; */
+
+}
+
+
+/* header */
+#header{
+    background: url("images/cover.jpeg") top/cover no-repeat;
+    box-shadow: 3px 4px 16px gray;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+    background-color: rgba(34, 207, 238, 0.836);
+}
+
+.carousel-control-next:hover{
+    background-color: rgb(151, 141, 147,o.3) !important;
+}
+
+.carousel-item #shop:hover{
+    /* color: palevioletred; */
+    font-weight: bold;
+    border-color: black;
+    background-color: deepskyblue;
+
+}
+.carousel-item #buy:hover{
+    color: palevioletred;
+    font-weight: bold;
+    border-color: black;
+}
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn{
+    background-color: dodgerblue!important;
+    color: rgb(10, 8, 10)!important;
+    border-color: rgb(112, 110, 110)!important;
+    border-radius: 18px;
+    width: 80px;
+    font-weight: 500;
+}
+
+.btn{
+    border: 1px solid !important;
+    border-radius: 18px;
+    font-weight: 500;
+}
+
+.filter-button-group .btn:hover{
+    color: rgb(240, 236, 240)!important;
+    font-weight: bold;
+    background-color: deepskyblue;
+    border-color: dodgerblue !important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.collection-img:hover{
+    outline: .1rem solid #222;
+    outline-offset: 0;
+}
+
+.collection-img:hover img{
+    transform: scale(1.1);
+    outline: .1rem solid #222;
+    outline-offset: 0;
+
+}
+
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: deepskyblue!important;
+}
+
+/* media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
